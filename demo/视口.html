@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width"/>-->
+    <!--<meta name="viewport" content="initial-scale=1.0"/>-->
+    <!--<meta name="viewport" content=" user-scalable=0"/>-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+    <!-- 申明了一个视口-->
+    <!-- 快捷方式  meta:vp  tab 键-->
+    <title>Document</title>
+    <!--
+    1.当我们把一个半分百的页面在移动设备浏览的时候  网页的宽度没有与和设备的宽度一致
+    2.移动设备的网页是基于！！！来计算宽度的
+    3.原因是在移动设备当中  浏览器和网页之间  还有一层虚拟容器 这个容器叫viewport
+    4viewport:只有在移动设备才有
+             虚拟的容器用来承载网页的
+             而且主流的设备当中的viewport的宽度默认是980px，
+             可以缩放，
+             可以设置尺寸，
+             是否允许用户自行缩放
+   -->
+    <!--   使用viewport和流式布局达到移动端的视配
+   ===标准化视配要求===：
+            1. 网页的宽度和浏览器一直  网页的内容(宽度)和视口宽度一样 然后视口的宽度和浏览器一样(和设备的一样)
+             设置width 和设备一样  有一个特殊的值width=device-width
+             缩放比例和PC一样 initial-scale=1.0
+            2.保证网页内容的缩放比和PC端保持一样  视口的缩放比是1.0
+             设置width 和设备一样  有一个特殊的值width=device-width
+               缩放比例和PC一样 initial-scale=1.0
+            3.不允许用户自行缩放  视口禁止缩放
+    -->
+
+
+    <!--
+        去完成这个标准版设置：
+          1.怎么设置viewport
+          网页的加载和解析顺序是从上到下，目的是让浏览器优先解释，运用在网页上
+            <meta name="viewport"/>
+          2.具体的功能怎么设置（常用的五个参数）
+          width     设置视口的宽度
+            单位默认是PX 特殊的值:device-width   代表当前设备的宽度
+          initial-scale   设置视口的默认的缩放比
+            大于0，小于1的时候  缩小    大于1 放大
+          user-scalable   设置视口是否允许用户自行缩放
+            0代表否  1代表可以   no 和  yes
+          minimum-sacle   最小允许缩放比
+          maximum-scale   最大允许缩放比
+    -->
+</head>
+<body>
+
+</body>
+</html>

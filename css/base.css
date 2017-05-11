@@ -1,0 +1,91 @@
+/*reset css  重置样式*/
+*,
+::before,
+::after{
+    /*选中所有的元素，和伪元素*/
+    margin: 0;
+    padding: 0;
+    /*针对移动端*/
+    box-sizing: border-box;/*从边框开始计算*/
+    -webkit-box-sizing: border-box;  /*移动端基于webkit主流移动端浏览器兼容*/
+    /*点击高亮效果清除*/
+    -webkit-tap-highlight-color: transparent;/*就是设置颜色用*/
+}
+
+body{
+    font-size: 14px;
+    color: #333333;
+    font-family: 'Microsoft Yahei',sans-serif;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #333333;
+}
+
+input,textarea{
+    outline: none; /*选中。。。？*/
+    border: none;
+    resize: none; /*拉边框大小*/
+    /*清除移动端输入框的样式*/
+    -webkit-appearance: none;  /*指原本默认的样式*/
+}
+
+/*common css  公用样式*/
+.fl {
+    float: left;
+}
+
+.fr{
+    float: right;
+}
+
+.clearfix::before,
+.clearfix::after{
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0px;
+    visibility: hidden;
+    clear: both;
+}
+
+.m_l10{
+    margin-left: 10px;
+}
+
+.m_r10{
+    margin-right: 10px;
+}
+
+/*精灵图*/
+/*class="icon_xxx" class="red icon_xxx"*/
+[class^="icon_"],[class*=" icon_"] {
+    background: url("../images/sprites.png") no-repeat;
+    background-size: 200px 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
